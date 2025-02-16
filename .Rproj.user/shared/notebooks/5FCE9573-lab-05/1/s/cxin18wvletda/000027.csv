@@ -1,0 +1,7 @@
+"0","# Describe the distribution of the distances Denny’s and the nearest La Quinta locations in Alaska. Also include an appropriate visualization and relevant summary statistics."
+"0",""
+"0","hist(dn_lq_ak_mindist$closest, "
+"0","     main=""Distribution of Closest Denny's to La Quinta in AK"", "
+"0","     xlab=""Distance (km)"", "
+"0","     col=""pink"", "
+"0","     border=""black"")"

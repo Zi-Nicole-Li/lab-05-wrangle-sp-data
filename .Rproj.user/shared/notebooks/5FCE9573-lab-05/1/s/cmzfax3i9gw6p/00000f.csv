@@ -1,0 +1,6 @@
+"0","# Calculate the distances between all pairs of Denny’s and La Quinta locations and save this variable as distance. "
+"0",""
+"0","dn_lq_ak <- dn_lq_ak %>%"
+"0","   mutate(.data=dn_lq_ak, distance = haversine (longitude.x, latitude.x, longitude.y, latitude.y, round = 3))"
+"0",""
+"0",""
