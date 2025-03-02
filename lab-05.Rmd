@@ -3,6 +3,7 @@ title: "Lab 05 - La Quinta is Spanish for next to Denny's, Pt. 2"
 author: "Zi Li"
 date: "Feb 12"
 output: github_document
+html_preview: false
 ---
 
 ### Load packages and data
