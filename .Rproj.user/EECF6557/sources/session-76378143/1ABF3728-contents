@@ -1,9 +1,8 @@
-
+---
 title: "Lab 05 - La Quinta is Spanish for next to Denny's, Pt. 2"
 author: "Zi Li"
 date: "Feb 12"
 output: github_document
-html_preview: false
 ---
 
 ### Load packages and data
@@ -53,6 +52,7 @@ print(num_pairing)
 
 
 ### Exercise 3
+
 ```{r,Ex.3}
 # we will join the two data frames. 
 dn_lq_ak <- full_join(dennys_ak, laquinta_ak, 
@@ -61,9 +61,9 @@ dn_lq_ak
 
 ```
 
-...
 
 ### Exercise 4
+
 ```{r, Ex4}
 # How many observations are in the joined dn_lq_ak data frame? 
 # What are the names of the variables in this data frame.
@@ -72,9 +72,9 @@ dn_lq_ak
 
 ```
 
-...
 
 ### Exercise 5
+
 ```{r, Ex5}
 # What function from the tidyverse do we use the add a new variable to a data frame while keeping the existing variables?
 
@@ -95,9 +95,9 @@ haversine <- function(long1, lat1, long2, lat2, round = 3) {
 
 ```
 
-...
 
 ### Exercise 6
+
 ```{r, Ex6}
 # Calculate the distances between all pairs of Denny’s and La Quinta locations and save this variable as distance. 
 
@@ -106,8 +106,8 @@ dn_lq_ak <- dn_lq_ak %>%
 
 ```
 
-...
 ### Exercise 7
+
 ```{r, Ex7}
 # Calculate the minimum distance between a Denny’s and La Quinta for each Denny’s location. 
 
@@ -118,6 +118,7 @@ dn_lq_ak_mindist <- dn_lq_ak %>%
 ```
 
 ### Exercise 8
+
 ```{r, Ex8}
 # Describe the distribution of the distances Denny’s and the nearest La Quinta locations in Alaska. Also include an appropriate visualization and relevant summary statistics.
 
@@ -134,6 +135,7 @@ print(dn_lq_ak_mindist$closest)
 
 ```
 ### Exercise 9
+
 ```{r Repeat the same analysis for NC}
 dennys_nc <- dennys %>%
   filter(state == "NC")
@@ -181,6 +183,7 @@ print(dn_lq_nc_mindist$closest)
 
 ```
 ### Exercise 10
+
 ```{r Repeat the same analysis for Texas}
 dennys_tx <- dennys %>%
   filter(state == "TX")
@@ -229,6 +232,7 @@ print(dn_lq_tx_mindist$closest)
 
 ```
 ### Exercise 11
+
 ```{r Repeat the same analysis for a state of my choosing}
 # I choose IL, cause I love Chicago. 
 
@@ -279,6 +283,7 @@ print(dn_lq_il_mindist$closest)
 
 ```
 ### Exercise 12
+
 ```{r where is Mitch Hedberg’s joke most likely to hold true}
 # to know where this joke is most likely true, we need to analyze and compare the minimum distances between Denny’s and La Quinta locations across states.
 
